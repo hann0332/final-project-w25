@@ -1,0 +1,188 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #fff;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2.027rem;
+}
+
+h2 {
+  font-size: 1.802rem;
+}
+
+h3 {
+  font-size: 1.266rem;
+}
+
+header {
+  background-color: #f8fafc;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li a {
+  font-weight: 600;
+}
+
+#shop .product {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.product-details {
+  padding: 1rem 0;
+}
+
+.product-details .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.limited-edition {
+  color: #000;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#behind-the-dough {
+  background-color: #f8fafc;
+  padding: 2rem 0;
+}
+
+#behind-the-dough p {
+  margin-bottom: 1rem;
+}
+
+#quotes {
+  padding: 2rem 0;
+  background-color: #000;
+  color: #fff;
+}
+
+#quotes .p {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#quotes .author {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+#try-it-with {
+  padding: 2rem 0;
+}
+
+#try-it-with h2 {
+  margin-bottom: 1rem;
+}
+
+#try-it-with .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#try-it-with .product p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    flex-wrap: nowrap;
+  }
+
+  #shop .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #try-it-with .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #quotes .p {
+    margin-inline: auto;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 960px) {
+  #shop .product {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-details {
+    grid-column: span 4;
+    margin-top: 2rem;
+  }
+
+  #try-it-with .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+}
+
